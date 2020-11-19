@@ -310,6 +310,29 @@ p{
     text-align: center;
     padding: 30px;
 }
+#redes-sociais{
+    color: white;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+#redes-sociais a{
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    margin: 0 20px 0 20px;
+}
+#redes-sociais a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+#creditos{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20pt;
+}
 
 
 
