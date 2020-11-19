@@ -303,13 +303,9 @@ p{
 .footer{
     grid-area: footer;
     background: linear-gradient(135deg, #8844ee, #b07dfb) ;
-
-}
-.footer p{
-    color: white;
-    text-align: center;
     padding: 30px;
 }
+
 #redes-sociais{
     color: white;
     border-bottom: 1px solid black;
@@ -326,6 +322,7 @@ p{
 #redes-sociais a:hover{
     color: blue;
     text-decoration: underline;
+    cursor: pointer;
 }
 #creditos{
     color: white;
