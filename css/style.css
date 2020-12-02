@@ -269,6 +269,12 @@ p{
     display: flex;
     align-items: center;
 }
+.mod-baixar:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    margin-top: -10;
+}
 .img-mod{
     width: 80px;
     margin: 5px 15px 5px 5px;
@@ -320,7 +326,7 @@ p{
 
 #redes-sociais{
     color: white;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
     width: 90%;
     margin: 0 auto;
     text-align: center;
