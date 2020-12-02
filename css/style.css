@@ -269,6 +269,13 @@ p{
     display: flex;
     align-items: center;
 }
+.mod-baixar a{
+    border-radius: 10px;
+    padding: 33px 20px 33px 20px;
+}
+.mod-baixar a:hover{
+    color: white;
+}
 .mod-baixar:hover{
     cursor: pointer;
     background-color: rgba(0,0,0,.5);
