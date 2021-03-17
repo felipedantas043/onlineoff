@@ -6,7 +6,7 @@ body{
     background-color: whitesmoke;
     font-family: "Vollkorn", georgia, serif;
     font-size: 13pt;
-    text-align: justify;
+    
 }
 li{
     list-style: none;
@@ -190,6 +190,7 @@ code{
     margin: 0 auto;
 }
 p{
+    text-align: justify;
     margin: 20px 10px 20px 10px;
 }
 .imagem-corpo{
