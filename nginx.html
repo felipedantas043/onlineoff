@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/nginx-style.css">
+    <title>onlineoff</title>
+</head>
+<body>
+    <div class="estrutura">
+
+        <header class="header">
+            <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
+            <nav>
+                <ul style="list-style: none;" class="menu">
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos.html">Termos de Uso</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <div class="sidenav">
+                <div class="teste">    
+                    <div class="icones">
+                        <a href="https://instagram.com/felipedantas043" target="_blank"><img src="imagens/instagram.png" alt="instagram"></a><br>
+                        <a href="https://t.me/devDesconhecido" target="_blank"><img src="imagens/telegram.png" alt="telegram"></a><br>
+                        <a href="https://wa.me/message/2PWIHCFTIXXCB1" target="_blank"><img src="imagens/whatsapp.png" alt="whatsapp"></a>
+                    </div>
+                </div>    
+            </div>
+
+            
+            <main class="content">
+                <div class="titulo">
+                    <h1>Como configurar um Web server no celular Android</h1>
+                </div>
+                <div class="artigo">
+                    <p>
+                        Primeiro baixe o aplicativo <strong>Termux</strong>, em seguida digite: <br><br>
+                        <code>pkg update</code><br><br>
+                        Agora vamos insalar o NGINX. Que é um servidor leve de HTTP, proxy reverso, proxy de <br> e-mail IMAP/POP3. O Nginx consome menos memória que o Apache, pois lida com requisições Web do tipo "event-based Web server", e o Apache é baseado no "process-based server", podendo trabalhar juntos.
+                    </p>
+                    <p>
+                        Dando continuidade com a instalação, vamos instalar o Nginx. <br><br>
+                        <code>pkg install nginx</code><br><br>
+                        Para ativar, digite: <br> <br>
+                        <code>nginx</code><br>
+                    </p>
+                    <p>
+                        Feito isso, agora vamos ver se está funcionando. Abra o navegador e digite na barra de pesquisa:<a href="http://localhost:8080" target="_blank"><code style="background-color: white;">http://localhost:8080</code></a>
+                        Se estiver tudo certo, ira aparecer a seginte mensagem na pagina:
+
+                        <img src="imagens/localhost-termux.jpg" alt="imagem"><br>
+
+                        Pronto, agora o seu web server está funcionando. Agora e só editar o arquivo <code>index.html</code> e salvar. Siga os passos abaixo para instalar um editor de texto e editar o index.
+                    </p>
+
+                    <p>
+                        Agora vamos editar nosso arquivo html, vamos tirar essa mensagem de boas vindas e colocar um simples olá mundo na tela. Para conseguir editar o arquivo com o termux, vamos instalar um editor de texto, eu escolhi o micro, mas existe outros editores por aí, então fica a seu criterio escolher qual o melhor editor, a instalação e igual para todos eles. <br><br>
+                        <code>pkg install micro</code>
+                    </p>
+                    <p>
+                        Agora procure o index que vai ser modificado, <br> Vamos começar digitando <code>pwd</code> o comando pwd escreve na tela o caminho completo da pasta atual.
+                        Essa vai ser a pasta: <code>/data/data/com.termux/files/home</code> digite <code>cd ..</code> para voltar uma pasta, pois está na pasta <strong>home</strong>, e queremos a <code>usr</code> depois <code>cd usr/share/nginx/html</code> com esse comando vamos entrar diretamente na pasta html. <strong>ls</strong> para listar os arquivos. Segue o exemplo na imagem abaixo: <br>
+                        <img src="imagens/exemplo.jpg" alt="Imagem">
+                        <br>
+                        vamos abrir o index para editar:
+                        <code>editor index.html</code>
+                        Pronto, arquivo aberto. Pode editar do jeito que quiser, vídeo demonstrando a alteração do index e salvando o arquivo logo abaixo: <br>
+
+                        <div class="video-ex">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AF5HWomambk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                        
+                    </p>
+                    <div class="redirect">
+                        <h2>Vejá também:</h2><br>
+
+        
+                    </div>
+                </div>
+            </main>
+
+                
+            <aside class="anuncios">
+                <div class="anuncio-item">
+                    
+                </div>
+            </aside>
+            
+
+        <footer class="footer">
+            &copy;FelipeDantas
+        </footer>
+    </div>  
+</body>
+</html>

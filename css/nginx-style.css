@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+    font-family: "Vollkorn", georgia, serif;
+    font-size: 13pt;
+}
+
+/*header*/
+
+.header{
+    grid-area: header;
+    padding: 20px;
+    background:linear-gradient(125deg, rgb(82, 214, 82), green) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu li{
+    margin: 10px;
+    margin-bottom: 15px;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.884);
+    border-radius: 10px;
+    
+}
+.menu li a:hover{
+    background-color: rgb(204, 204, 204);
+    color: rgb(0, 0, 0);
+    transition-duration: .3s;
+}
+
+/*body*/
+.titulo h1{
+    color: rgb(99, 168, 29);
+    font-size: 30pt;
+    line-height: 1;
+    font-weight: 700;
+}
+/*essa estrutura principal tem que ser declarada primeiro que os @media*/
+.estrutura{
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) 4fr 300px;
+    grid-template-areas: 
+        "header header header"
+        "sidenav content anuncios"
+        "footer footer footer"
+    ;
+}
+.sidenav{
+    position: relative;
+    grid-area: sidenav;
+    text-align: center;
+}
+.icones{
+    
+    position: fixed;
+    left: 30px;
+}
+.video-ex{
+    text-align: center;
+}
+@media (max-width:1050px){
+    .estrutura{
+        grid-template-areas: 
+            "header header header"
+            "sidenav content content"
+            "sidenav anuncios anuncios"
+            "footer footer footer"
+        ;
+    }
+}
+@media (max-width:760px){
+    .estrutura{
+        grid-template-columns:1fr;
+        grid-template-areas: 
+            "header"
+            "sidenav"
+            "content"
+            "anuncios"
+            "footer"
+        ;
+    }
+    .icones{
+        display: flex;
+        position: absolute;left:20%;
+    }
+    .sidenav{
+        padding-bottom: 130px;
+    }
+    .video-ex iframe{
+        width: 400px;
+    }
+}
+@media (max-width:550px){
+    .icones{
+        left: 10%;
+    }
+    .video-ex iframe{
+        width: 300px;
+    }
+}
+
+
+
+.sidenav a img{
+    width: 90px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+@media (max-width:400px){
+    .sidenav a img{
+        width: 60px;
+    }
+    .icones{
+        left:10%;
+    }
+    .sidenav{
+        padding-bottom: 100px;
+    }
+    .video-ex iframe{
+        width: 200px;
+    }
+}
+.content{
+    grid-area: content;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+code{
+    padding: 0 5px 0 5px;
+    background-color: rgb(216, 216, 216);
+}
+
+
+.artigo{
+    margin: 0 auto;
+}
+p{
+    margin: 20px 10px 20px 10px;
+}
+img{
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+/*ads*/
+
+.anuncios{
+
+    grid-area: anuncios;
+}
+.redirect{
+    grid-area: redirect;
+}
+/*footer*/
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    
+}
