@@ -98,7 +98,13 @@ img{
         right: 20px;
     }
 }
-
+footer{
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+    color: white;
+}
 @media (max-width:760px){
     .sidenav {
         position: relative;
@@ -206,11 +212,4 @@ p{
     max-width: 384px;
 }
 /*footer*/
-footer{
-    grid-area: footer;
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #8844ee, #b07dfb);
-    color: white;
-}
-}
+
