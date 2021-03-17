@@ -300,7 +300,8 @@ p{
 @media (max-width: 590px){
     .anuncios{
         text-align: center;
-        display: inline;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
