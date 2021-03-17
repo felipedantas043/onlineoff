@@ -6,6 +6,7 @@ body{
     background-color: whitesmoke;
     font-family: "Vollkorn", georgia, serif;
     font-size: 13pt;
+    text-align: justify;
 }
 li{
     list-style: none;
