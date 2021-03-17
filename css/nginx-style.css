@@ -13,7 +13,7 @@ body{
 .header{
     grid-area: header;
     padding: 20px;
-    background:linear-gradient(125deg, rgb(82, 214, 82), green) ;
+    background:linear-gradient(135deg, #8844ee, #b07dfb) ;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -116,14 +116,14 @@ body{
 
 
 .sidenav a img{
-    width: 90px;
+    width: 70px;
     padding: 10px;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
 }
 @media (max-width:400px){
     .sidenav a img{
-        width: 60px;
+        width: 40px;
     }
     .icones{
         left:10%;
@@ -173,7 +173,7 @@ footer{
     grid-area: footer;
     text-align: center;
     padding: 20px;
-    background-color: green;
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
     color: white;
     
 }
