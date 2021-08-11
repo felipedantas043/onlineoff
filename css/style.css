@@ -337,7 +337,7 @@ p{
 .footer{
     grid-area: footer;
     background: linear-gradient(135deg, #8844ee, #b07dfb) ;
-    padding: 30px;
+    padding: 10px;
 }
 
 #redes-sociais{

@@ -5,7 +5,7 @@
 body{
     background-color: whitesmoke;
     font-family: "Vollkorn", georgia, serif;
-    font-size: 13pt;
+    font-size: 14pt;
     
 }
 li{
@@ -16,7 +16,8 @@ a{
 }
 img{
     display: block;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     border-radius: 5px;
 }
 
@@ -58,12 +59,13 @@ img{
     color: rgb(99, 168, 29);
     font-size: 30pt;
     line-height: 1;
+    margin-bottom: 50px;
     font-weight: 700;
 }
 /*essa estrutura principal tem que ser declarada primeiro que os @media*/
 .estrutura{
     display: grid;
-    grid-template-columns: minmax(160px, 1fr) 4fr 300px;
+    grid-template-columns:160px 1fr 100px;
     grid-template-areas: 
         "header header header"
         "sidenav content anuncios"

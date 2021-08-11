@@ -8,6 +8,20 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/nginx-style.css">
     <title>onlineoff</title>
+    <style>
+        .content{
+            padding: 30px;
+            
+        }
+        .video-ex{
+            margin: 50px auto 50px auto;
+            
+        }
+        code{
+            padding: 0 5px 0 5px;
+            background-color: rgb(216, 216, 216);
+        }
+    </style>
 </head>
 <body>
     <div class="estrutura">
@@ -43,7 +57,7 @@
                     <p>
                         Primeiro baixe o aplicativo <strong>Termux</strong>, em seguida digite: <br><br>
                         <code>pkg update</code><br><br>
-                        Agora vamos insalar o NGINX. Que é um servidor leve de HTTP, proxy reverso, proxy de <br> e-mail IMAP/POP3. O Nginx consome menos memória que o Apache, pois lida com requisições Web do tipo "event-based Web server", e o Apache é baseado no "process-based server", podendo trabalhar juntos.
+                        Vamos insalar o NGINX. Que é um servidor leve de HTTP, proxy reverso, proxy de <br> e-mail IMAP/POP3. O Nginx consome menos memória que o Apache, pois lida com requisições Web do tipo "event-based Web server", e o Apache é baseado no "process-based server", podendo trabalhar juntos.
                     </p>
                     <p>
                         Dando continuidade com a instalação, vamos instalar o Nginx. <br><br>
@@ -61,11 +75,11 @@
                     </p>
 
                     <p>
-                        Agora vamos editar nosso arquivo html, vamos tirar essa mensagem de boas vindas e colocar um simples olá mundo na tela. Para conseguir editar o arquivo com o termux, vamos instalar um editor de texto, eu escolhi o micro, mas existe outros editores por aí, então fica a seu criterio escolher qual o melhor editor, a instalação e igual para todos eles. <br><br>
+                        Vamos tirar essa mensagem de boas vindas e colocar um simples olá mundo na tela. Para conseguir editar o arquivo com o termux, vamos instalar um editor de texto. Eu escolhi o micro, mas existe outros editores por aí, então fica a seu criterio escolher qual o melhor editor. A instalação e igual para todos eles. <br><br>
                         <code>pkg install micro</code>
                     </p>
                     <p>
-                        Agora procure o index que vai ser modificado, <br> Vamos começar digitando <code>pwd</code> o comando pwd escreve na tela o caminho completo da pasta atual.
+                        <p>Procure o index que vai ser modificado, <br> Vamos começar digitando <code>pwd</code> Que significa Print Working Directory, o comando ‘ pwd ‘ imprime o diretório de trabalho atual ou simplesmente o diretório em que o usuário está, no momento. </p><br>
                         Essa vai ser a pasta: <code>/data/data/com.termux/files/home</code> digite <code>cd ..</code> para voltar uma pasta, pois está na pasta <strong>home</strong>, e queremos a <code>usr</code> depois <code>cd usr/share/nginx/html</code> com esse comando vamos entrar diretamente na pasta html. <strong>ls</strong> para listar os arquivos. Segue o exemplo na imagem abaixo: <br>
                         <img class="imagem-corpo" src="imagens/exemplo.jpg" alt="Imagem">
                         <br>
